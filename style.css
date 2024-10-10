@@ -336,7 +336,7 @@
     width: 300px;
     height: 300px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
     border-radius: 16px;
     border: solid 3px;
@@ -364,10 +364,12 @@
     
   }
   .swiper-slide .title {
+    width: 100%;
     font-size: 1rem;
     font-weight: 300;
-    align-items: flex-end;
+    align-items: center;
     margin-bottom: 0.3rem;
+    margin-right: 25px;
   }
 
   .swiper-slide img {
@@ -381,8 +383,7 @@
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    position: absolute;
- 
+
     object-fit: cover;
     left: 50%;
     top: 50%;
