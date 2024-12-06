@@ -1,196 +1,262 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Choix menu</title>
-    <meta
-      name="description"
-      content="Découvrez nos burgers, desserts, boissons et salades dans une ambiance familiale. La rapidité de la préparation et la qualité de nos ingrédients vont surprendre les plus gourmands clients. Pour un prix abordable, vous pouvez manger un repas complet et équilibré. Vous pouvez manger et vous reposer dans des espaces agréables et confortables."
-    />
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
 
-  <body id="cssportal-grid">
-    <!--swiper-->
-    <header class="div1" id="div1">
-      <div class="swiper mySwiper  fixedBis">
-        <div id="myDIV" class="swiper-wrapper " >
-          <!--boissons-->
-          <div class="swiper-slide btn flex">
-            <a href="#cardBoissons">
-              <img
-                src="categories/boissons.png"
-                alt=" verre avec boisson coca-cola"
-                loading="lazy"
-              />
-              <div
-                class="swiper-lazy-preloader swiper-lazy-preloader-white"
-              ></div>
-              <div class="title">Boissons</div>
-            </a>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <title>Choix menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Découvrez nos burgers, desserts, boissons et salades dans une ambiance familiale. La rapidité de la préparation et la qualité de nos ingrédients vont surprendre les plus gourmands clients. Pour un prix abordable, vous pouvez manger un repas complet et équilibré. Vous pouvez manger et vous reposer dans des espaces agréables et confortables." />
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
 
-          <!--burgers-->
-          <div class="swiper-slide btn">
-            <a href="#cardBurgers">
-              <img
-                src="categories/burgers.png"
-                alt="hamburger "
-                loading="lazy"
-              />
-              <div
-                class="swiper-lazy-preloader swiper-lazy-preloader-white"
-              ></div>
-              <div class="title">Burgers</div></a
-            >
-          </div>
+<body id="cssportal-grid">
+  <!--swiper-->
+  <header class="header div1" id="div1">
+    <div class="swiper mySwiper  fixedBis">
+      <div id="myDIV" class="swiper-wrapper ">
+        <!--boissons-->
+        <div class="swiper-slide btn  category-btn" data-target="d1" id="togg1">
+          <a href="#cardBoissons">
+            <img src="categories/boissons.png" alt=" verre avec boisson coca-cola" loading="lazy" />
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="title">Boissons</div>
+          </a>
+        </div>
 
-          <!--desserts-->
-          <div class="swiper-slide btn">
-            <a href="#cardDesserts"
-              ><img
-                src="categories/desserts.png"
-                alt="dessert glace avec m&ms "
-                loading="lazy"
-              />
-              <div
-                class="swiper-lazy-preloader swiper-lazy-preloader-white"
-              ></div>
-              <div class="title">Desserts</div>
-            </a>
-          </div>
+        <!--burgers-->
+        <div class="swiper-slide btn category-btn" data-target="d2" id="togg2">
+          <a href="#cardBurgers">
+            <img src="categories/burgers.png" alt="hamburger " loading="lazy" />
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="title">Burgers</div>
+          </a>
+        </div>
 
-          <!--encas-->
-          <div class="swiper-slide btn">
-            <a href="#cardEncas"
-              ><img
-                src="categories/encas.png"
-                alt="encas sachet avec des nugets de poulet "
-                loading="lazy"
-              />
-              <div
-                class="swiper-lazy-preloader swiper-lazy-preloader-white"
-              ></div>
-              <div class="title">Encas</div></a
-            >
-          </div>
+        <!--desserts-->
+        <div class="swiper-slide btn category-btn" data-target="d3" id="togg3">
+          <a href="#cardDesserts"><img src="categories/desserts.png" alt="dessert glace avec m&ms " loading="lazy" />
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="title">Desserts</div>
+          </a>
+        </div>
 
-          <!--frites-->
-          <div class="swiper-slide btn">
-            <a href="#cardFrites">
-              <img
-                src="categories/frites.png"
-                alt="sachet avec des frites "
-                loading="lazy"
-              />
-              <div
-                class="swiper-lazy-preloader swiper-lazy-preloader-white"
-              ></div>
-              <div class="title">Frites</div>
-            </a>
-          </div>
+        <!--encas-->
+        <div class="swiper-slide btn category-btn" data-target="d4" id="togg4">
+          <a href="#cardEncas"><img src="categories/encas.png" alt="encas sachet avec des nugets de poulet "
+              loading="lazy" />
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="title">Encas</div>
+          </a>
+        </div>
 
-          <!--menus-->
-          <div class="swiper-slide btn">
-            <a href="#cardMenus">
-              <img
-                src="categories/menus.png"
-                alt="menu composé de burger, frites et un verre de coca-cola"
-                loading="lazy"
-              />
-              <div
-                class="swiper-lazy-preloader swiper-lazy-preloader-white"
-              ></div>
-              <div class="title">Menus</div>
-            </a>
-          </div>
+        <!--frites-->
+        <div class="swiper-slide btn category-btn"  data-target="d5" id="togg5">
+          <a href="#cardFrites">
+            <img src="categories/frites.png" alt="sachet avec des frites " loading="lazy" />
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="title">Frites</div>
+          </a>
+        </div>
 
-          <!--salades-->
-          <div class="swiper-slide btn">
-            <a href="#cardSalades"
-              ><img
-                src="categories/salades.png"
-                alt="assiette avec salade "
-                loading="lazy"
-              />
-              <div
-                class="swiper-lazy-preloader swiper-lazy-preloader-white"
-              ></div>
-              <div class="title">Salades</div>
-            </a>
-          </div>
+        <!--menus-->
+        <div class="swiper-slide btn category-btn" data-target="d6" id="togg6" >
+          <a href="#cardMenus" class="category-btn" data-target="cardMenus">
+            <img src="categories/menus.png" alt="menu composé de burger, frites et un verre de coca-cola"
+              loading="lazy" />
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="title">Menus</div>
+          </a>
+        </div>
 
-          <!--sauces-->
-          <div class="swiper-slide btn">
-            <a href="#cardSauces">
-              <img
-                src="categories/sauces.png"
-                alt="sauce "
-                loading="lazy"
-              />
-              <div
-                class="swiper-lazy-preloader swiper-lazy-preloader-white"
-              ></div>
-              <div class="title">Sauces</div>
-            </a>
-          </div>
+        <!--salades-->
+        <div class="swiper-slide btn category-btn" data-target="d7" id="togg7">
+          <a href="#cardSalades"><img src="categories/salades.png" alt="assiette avec salade " loading="lazy" />
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="title">Salades</div>
+          </a>
+        </div>
 
-          <!--wraps-->
-          <div class="swiper-slide btn">
-            <a href="#cardWraps">
-              <img
-                src="categories/wraps.png"
-                alt="wrap "
-                loading="lazy"
-              />
-              <div
-                class="swiper-lazy-preloader swiper-lazy-preloader-white"
-              ></div>
-              <div class="title">Wraps</div>
-            </a>
-          </div>
+        <!--sauces-->
+        <div class="swiper-slide btn category-btn" data-target="d8" id="togg8">
+          <a href="#cardSauces">
+            <img src="categories/sauces.png" alt="sauce " loading="lazy" />
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="title">Sauces</div>
+          </a>
+        </div>
+
+        <!--wraps-->
+        <div class="swiper-slide btn category-btn" data-target="d9" id="togg9">
+          <a href="#cardWraps">
+            <img src="categories/wraps.png" alt="wrap " loading="lazy" />
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <div class="title">Wraps</div>
+          </a>
         </div>
       </div>
-      <div class=" hidden swiper-button-prev"></div>
-      <div class=" hidden swiper-button-next"></div>
-    </header>
+    </div>
+    <div class=" hidden swiper-button-prev"></div>
+    <div class=" hidden swiper-button-next"></div>
+  </header>
 
-    <!--les produits-->
-    <div id="div2">
-      <!--SECTION MENUS-->
-      <!--id="imgBox" pour lui donner display non et ensuite le rendre visible au click sur le bouton 'menus' dans le slider en haut de page-->
-      <section class="flex paddings margins">
-        <!-- à gauche: la liste des priduits-->
-        <div class="">
-          <h2>Nos menus</h2>
-          <p>Un sandwich, une friture ou une salade et une boisson</p>
+  <!--**** div2 : a gauche: les produits ******-->
+  <div id="div2">
 
-          <!--cartes menu en js json-->
-          <div id="cardMenus" class="listeProduits">
-            <!--  <div class="cardProduits btn" " data-price=" "">
+    <!--SECTION MENUS-->
+    <!--id="imgBox" pour lui donner display non et ensuite le rendre visible au click sur le bouton 'menus' dans le slider en haut de page-->
+    <section class="flex paddings margins category-content hidden " id="d6" >
+      <!-- à gauche: la liste des priduits-->
+      <div class="" >
+        <h2>Nos menus</h2>
+        <p>Un sandwich, une friture ou une salade et une boisson</p>
+       
+
+        <!--cartes menu en js json-->
+        <div id="cardMenus" class="listeProduits menu-card">
+          <!--  <div class="cardProduits btn" " data-price=" "">
         <img src="assets/burgers/280.png" alt="burger 280 ">
         <div class="">
           <h4>Nom du produit</h4>
-          <p>7.50€</p>
+          <p> <span data-price=""> 7.50€ </span></p>
         </div>
+         <button class="  choose-menu-btn">Choisir</button>
       </div>    -->
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--SECTION DESSERTS-->
-      <section class="flex paddings margins">
-        <!-- à gauche: la liste des priduits-->
-        <div class="">
-          <h2>Nos desserts</h2>
-          <p>les meilleures desserts pour tous</p>
+      <!-- Le Popup -->
+      <div
+      id="popup"
+      class="popup popup-content flex margins gap spaceBetween bgWhite"
+    >
+      <div class="flex spaceAround paddings margins">
+        <!--div contennant le texte-->
+        <div class="flex margins">
+          <h2>Une grosse faim?</h2>
+          <p>
+            Le menu Maxi Best Of comprend un sandwich, une grande frite et une boisson 50 Cl</p>
+        </div>
+        <!--div contennant les 2 images choix-->
 
-          <!--cartes menu en js json-->
-          <div id="cardDesserts" class="listeProduits">
-            <!-- 
+        <!--maxi-->
+        <div class="choix margin flex spaceAround">
+          <button id="option1" class="cadreActive btn flex">
+            <img
+              src="assets/images/illustration-maxi-best-of.png"
+              alt="illustration menu maxi"
+            />
+          </button>
+
+          <!--normal-->
+          <button id="option2" class="cadreActive flex btn">
+            <img
+              src="assets/images/illustration-best-of.png"
+              alt="illustration menu normal"
+            />
+          </button>
+        </div>
+        <button class="activeOrangeButton margins">Etape Suivante</button>
+      </div>
+    </div>
+
+    <!--SECTION SALADES-->
+    <section class="flex paddings margins category-content hidden" id="d7">
+
+      <div class="flex spaceBetween">
+        <h2>Nos salades </h2>
+        <p>Un accompagnement parfait pour vos plats</p>
+
+        <!--cartes salades en js json-->
+        <div id="cardSalades" class="listeProduits">
+          <!--<div class="cardProduits btn data-nom="pepsi" data-prix="2.50"">
+                    <img src="assets/salades/PETITE-SALADE.png" alt="bol petite salade verte">
+                    <div class="">
+                    <h4>Nom du produit</h4>
+                    <p>7.50€</p>
+                    </div>
+              </div>-->
+        </div>
+      </div>
+    </section>
+
+
+    <!--SECTION SAUCES-->
+    <section class="flex paddings margins category-content hidden" id="d8">
+
+      <div class="">
+        <h2>Nos sauces </h2>
+        <p>Une sauce exceptionnelle pour accompagner votre menu ou vos frites</p>
+
+        <!--cartes sauces en js json-->
+        <div id="cardSauces" class="listeProduits">
+          <!--<div class="cardProduits btn data-nom="cremy-deluxe" data-prix="2.50"">
+                    <img src="assets/sauces/sauce-curry.png" alt="petite boite sauce ">
+                    <div class="">
+                    <h4>Nom du produit</h4>
+                    <p>7.50€</p>
+                    </div>
+              </div>-->
+        </div>
+      </div>
+    </section>
+
+    <!--SECTION WRAPS-->
+    <section class="flex paddings margins category-content hidden" id="d9">
+      <!-- à gauche: la liste des priduits-->
+      <div class="">
+        <h2>Nos wraps</h2>
+        <p>une petite faim ou envie de changer, mangez un wrap</p>
+
+        <!--cartes menu en js json-->
+        <div id="cardWraps" class="listeProduits">
+          <!-- 
+  <div class="cardProduits btn data-nom="mcwrap-chevre" data-prix="2.50"">
+    <img src="assets/wraps/mcwrap-chevre.png" alt="wrap ">
+    <div class="">
+      <h4>Nom du produit</h4>
+      <p>7.50€</p>
+    </div>
+  </div>-->
+        </div>
+      </div>
+    </section>
+
+    <!--SECTION BOISSONS-->
+    <section class="flex paddings margins category-content hidden" id="d1">
+      <!-- à gauche: la liste des priduits-->
+      <div class="">
+        <h2>Nos boissons fraiches</h2>
+        <p>une petite soif, sucrée, légère, rafraichissante</p>
+
+        <!--cartes menu en js json-->
+        <div id="cardBoissons" class="listeProduits">
+          <!-- 
+  <div class="cardProduits btn data-nom="pepsi" data-prix="2.50"">
+    <img src="assets/burgers/280.png" alt="burger 280 ">
+    <div class="">
+      <h4>Nom du produit</h4>
+      <p>7.50€</p>
+    </div>
+  </div>-->
+        </div>
+      </div>
+    </section>
+
+    <!--SECTION BURGERS-->
+    <section class="flex paddings margins category-content hidden" id="d2">
+      <!-- à gauche: la liste des priduits-->
+      <div class="">
+        <h2>Nos burgers</h2>
+        <p>nos burgers sont pour tous</p>
+
+        <!--cartes menu en js json-->
+        <div id="cardBurgers" class="listeProduits">
+          <!-- 
       <div class="cardProduits btn">
         <img src="assets/burgers/280.png" alt="burger 280 ">
         <div class="">
@@ -198,41 +264,62 @@
           <p>7.50€</p>
         </div>
       </div>-->
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--SECTION BOISSONS-->
-      <section class="flex paddings margins">
-        <!-- à gauche: la liste des priduits-->
-        <div class="">
-          <h2>Nos boissons fraiches</h2>
-          <p>une petite soif, sucrée, légère, rafraichissante</p>
+    <!--SECTION DESSERTS-->
+    <section class="flex paddings margins category-content hidden" id="d3">
+      <!-- à gauche: la liste des priduits-->
+      <div class="">
+        <h2>Nos desserts</h2>
+        <p>les meilleures desserts pour tous</p>
 
-          <!--cartes menu en js json-->
-          <div id="cardBoissons" class="listeProduits">
-            <!-- 
-      <div class="cardProduits btn data-nom="pepsi" data-prix="2.50"">
+        <!--cartes menu en js json-->
+        <div id="cardDesserts" class="listeProduits">
+          <!-- 
+      <div class="cardProduits btn">
         <img src="assets/burgers/280.png" alt="burger 280 ">
         <div class="">
           <h4>Nom du produit</h4>
           <p>7.50€</p>
         </div>
       </div>-->
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--SECTION FRITES-->
-      <section class="flex paddings margins ">
-        <!-- à gauche: la liste des priduits-->
+    <!--SECTION ENCAS-->
+    <section class="flex paddings margins category-content hidden" id="d4">
         <div class="">
-          <h2>Nos frites</h2>
-          <p>les meilleures frites de votre enfance</p>
+        <h2>Nos encas</h2>
+        <p>les meilleures encas pour des petites faims</p>
 
-          <!--cartes menu en js json-->
-          <div id="cardFrites" class="listeProduits">
-            <!--   
+        <!--cartes menu en js json-->
+        <div id="cardEncas" class="listeProduits">
+          <!--   
+                <div class="cardProduits">
+                    <img src="assets/encas/nugets_4.png" alt="encas nuggets">
+                    <div class="">
+                        <h4>Nom du produit</h4>
+                        <p>1.90 €</p>
+                    </div>
+                </div>
+              -->
+        </div>
+      </div>
+    </section>
+
+    <!--SECTION FRITES-->
+    <section class="flex paddings margins category-content hidden" id="d5">
+      <!-- à gauche: la liste des priduits-->
+      <div class="">
+        <h2>Nos frites</h2>
+        <p>les meilleures frites de votre enfance</p>
+
+        <!--cartes menu en js json-->
+        <div id="cardFrites" class="listeProduits">
+          <!--   
                 <div class="cardProduits">
                     <img src="assets/burgers/280.png" alt="Le 280">
                     <div class="">
@@ -241,60 +328,66 @@
                     </div>
                 </div>
               -->
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!--*****la bande détail commande à droite ******-->
+  <div id="div3" class="fixedBis">
+    <!--bande menu à droite-->
+    <div class="flex-container">
+      <!--la dive du flex-conteiner-->
+      <div class="flex-items">
+        <!-- la div contenant le logo et 2 paragraphes-->
+        <div class="divUp">
+          <!--  le logo -->
+          <div class="logo">
+            <img class="logo" src="assets/logo.png" alt="logo wacdo" />
+          </div>
+
+          <!-- la div contenant les 2 p-->
+          <div class="borderBottom detailCommande">
+            <p>Commande numéro:</p>
+
+            <p>sur place:</p>
           </div>
         </div>
-      </section>
-    </div>
+        <!-- la div contenant le détail de la commande-->
+        <h3>Votre commande :</h3>
+        <ul id="commandeListe"></ul>
 
-    <!--la bande détail commande à droite-->
-    <div id="div3" class="fixedBis">
-      <!--bande menu à droite-->
-      <div class="flex-container">
-        <!--la dive du flex-conteiner-->
-        <div class="flex-items">
-          <!-- la div contenant le logo et 2 paragraphes-->
-          <div class="divUp">
-            <!--  le logo -->
-            <div class="logo">
-              <img
-                class="logo"
-                src="assets/categories/logo.png"
-                alt="logo wacdo"
-              />
-            </div>
+        <div class="flex">
+          <!-- la div contenant le total de la commande-->
+          <p>Total : <span id="totalPrice">0.00</span>€</p>
 
-            <!-- la div contenant les 2 p-->
-            <div class="borderBottom detailCommande">
-              <p>Commande numéro:</p>
-
-              <p>sur place:</p>
-            </div>
-          </div>
-          <!-- la div contenant le détail de la commande-->
-          <h3>Votre commande :</h3>
-          <ul id="commandeListe"></ul>
-
-          <div class="flex">
-            <!-- la div contenant le total de la commande-->
-            <p>Total : <span id="totalPrice">0.00</span>€</p>
-
-            <!-- la div contenant 2 bouttons -->
-            <div class="flex spaceAround divBottom">
-              <button class="greyButton">abandon</button>
-              <button class="activeOrangeButton">payer</button>
-            </div>
+          <!-- la div contenant 2 bouttons -->
+          <div class="flex spaceAround divBottom">
+            <button class="greyButton">abandon</button>
+            <button class="activeOrangeButton">payer</button>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!--Swiper JS-->
-    <script src="./node_modules/swiper/swiper-bundle.min.js" defer></script>
-    <script src="./menus.js" defer></script>
-    <script src="./boissons.js" defer></script>
-    <script src="./desserts.js" defer></script>
-    <script src="classeBoutons.js" defer></script>
-    <script src="./frites.js" defer></script>
-    <script src="./app.js" defer></script>
-  </body>
+  <!--Swiper JS-->
+  <script src="./node_modules/swiper/swiper-bundle.min.js" defer></script>
+  <script src="./JS/menus.js" defer></script>
+  <script src="./JS/salades.js" defer> </script>
+  <script src="./JS/sauces.js" defer> </script>
+  <script src="./JS/wraps.js" defer> </script>
+  <script src="./JS/boissons.js" defer></script>
+  <script src="./JS/burgers.js" defer></script>
+  <script src="./JS/desserts.js" defer></script>
+  <script src="./JS/encas.js" defer></script>
+  <script src="./JS/frites.js" defer></script>
+
+  <script src="./JS/popUp.js" defer></script>
+  <script src="./JS/displayNone.js" defer></script>
+  
+  <script src="./JS/app.js" defer></script>
+</body>
+
 </html>

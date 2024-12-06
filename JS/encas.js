@@ -1,35 +1,32 @@
-// Fetch pour remplir les produits(menus, burgers, boissons...) sur la page produits
+// Fetch pour remplir les Encas sur la page produits
 
-let optionsM = {
+let optionsE = {
     method: "GET"
 }
 
-fetch("./produits.json", optionsM)
+fetch("./produits.json", optionsE)
     .then(produits => {
         console.log("produits")
         return produits.json()
     })
     .then(data => {
-        // ici j'ai access a ma donnée
-        console.log(data.menus)
-        construitMonTemplateMenus(data.menus)
+        // ici j'ai access aux donnees
+        console.log(data.encas)
+        construitMonTemplateEncas(data.encas)
     })
-
-
 
 
 //fonction pour remplir les donnees des produits
 
-// role: remplie automatiquement diferentes données concernant lesproduits à partir du doc produits.json
+// role: remplie automatiquement diferentes données concernant les produits à partir du doc produits.json
 // parametres: le ID css id="cardProduits" , les données dans le doc produits.json 
 
-function construitMonTemplateMenus(donnees) {
+function construitMonTemplateEncas(donnees) {
     // recuperer le id dans le document
-    let zone = document.querySelector("#cardMenus")
+    let zone = document.querySelector("#cardEncas")
     donnees.forEach(donnee => {
         zone.innerHTML += `
-        <div class="cardProduits btn data-name=${donnee.nom} data-price=${donnee.prix}">
-
+        <div class="cardProduits btn">
             <img src="assets${donnee.image}" alt="${donnee.nom} " ">
                 <div class="">
                     <h4>${donnee.nom}</h4> 
@@ -39,7 +36,3 @@ function construitMonTemplateMenus(donnees) {
          `
     })
 }
-
-
-
-
