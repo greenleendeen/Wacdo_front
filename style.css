@@ -201,6 +201,7 @@ p {
 
 .swiper-slide {
   /*display: flex;*/
+
   align-items: flex-end;
   border-radius: 16px;
   border: solid 3px;
