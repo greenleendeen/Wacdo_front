@@ -201,12 +201,12 @@ p {
 
 .swiper-slide {
   /*display: flex;*/
-
-  align-items: flex-end;
+justify-content: center;
+  align-items: center;
   border-radius: 16px;
   border: solid 3px;
   border-color: var(--rulles-strokes);
-  height: 100%;
+  height: 170px;
   box-sizing: border-box;
   /*background-color: blueviolet;*/
 
