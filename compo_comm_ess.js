@@ -1,5 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
     let total = 0;
+    const commandeListe = document.querySelector("#commandeListe");
+    const totalPrice = document.querySelector("#totalPrice");
+
+    // Écouter les clics sur tout le document (délégation d'événements)
+    document.body.addEventListener("click", function (event) {
+        const target = event.target.closest(".cardProduits");
+        if (target) {
+            // Récupérer les données du produit cliqué
+            const nom = target.getAttribute("data-nom");
+            const prixStr = target.getAttribute("data-price");
+            const prix = parseFloat(prixStr);
+
+            if (isNaN(prix)) {
+                console.error(`Prix invalide pour le produit : ${nom}. Prix reçu : ${prixStr}`);
+                return;
+            }
+
+            // Ajouter le produit à la commande
+            const listItem = document.createElement("li");
+            listItem.textContent = `${nom} - ${prix.toFixed(2)}€`;
+            commandeListe.appendChild(listItem);
+
+            // Mettre à jour le total
+            total += prix;
+            totalPrice.textContent = total.toFixed(2) + "€";
+        }
+    });
+});
+
+/**document.addEventListener("DOMContentLoaded", function () {
+    let total = 0;
 
     const boissonsContainer = document.querySelector("#cardBoissons");
     const burgersContainer = document.querySelector("#cardBurgers");
@@ -30,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
             totalPrice.textContent = total.toFixed(2) + "€";
         }
     });
-});
+});*/
 
 /** 
 document.addEventListener('DOMContentLoaded', function () { 
