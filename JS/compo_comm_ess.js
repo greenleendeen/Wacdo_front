@@ -1,21 +1,34 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
     let total = 0;
-    
-    // Récupérer tous les boutons de produit
-    const buttons = document.querySelectorAll('.cardProduits');
-    
-    // Ajouter un événement de clic à chaque bouton
-    buttons.forEach(button => {
-        button.addEventListener('click', function () {
-            // Récupérer le prix du produit à partir de l'attribut data-price
-            const price = parseFloat(this.getAttribute('data-price'));
-            
-            // Ajouter le prix au total
-            total += price;
-            
-            // Mettre à jour l'affichage du total
-            document.getElementById('total').innerText = `Total : ${total}€`;
-        });
+
+    const boissonsContainer = document.querySelector("#cardBoissons");
+    const burgersContainer = document.querySelector("#cardBurgers");
+    const commandeListe = document.querySelector("#commandeListe");
+    const totalPrice = document.querySelector("#totalPrice");
+
+    boissonsContainer.addEventListener("click", function (event) {
+        const target = event.target.closest(".cardProduits");
+        if (target) {
+            // Récupérer les données
+            const nom = target.getAttribute("data-nom");
+            const prixStr = target.getAttribute("data-price");
+            const prix = parseFloat(prixStr);
+
+            // Vérification du prix
+            if (isNaN(prix)) {
+                console.error(`Prix invalide pour le produit : ${nom}. Prix reçu : ${prixStr}`);
+                return;
+            }
+
+            // Ajouter le produit à la commande
+            const listItem = document.createElement("li");
+            listItem.textContent = `${nom} - ${prix.toFixed(2)}€`;
+            commandeListe.appendChild(listItem);
+
+            // Mettre à jour le total
+            total += prix;
+            totalPrice.textContent = total.toFixed(2) + "€";
+        }
     });
 });
 

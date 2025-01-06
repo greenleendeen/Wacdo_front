@@ -23,18 +23,24 @@ fetch("./produits.json", optionsB)
 
 function construitMonTemplateBoissons(donnees) {
     // recuperer le id dans le document
-    let zone = document.querySelector("#cardBoissons")
+    let zone = document.querySelector("#cardBoissons");
     donnees.forEach(donnee => {
+
+        if (!donnee.nom || !donnee.prix || isNaN(donnee.prix)) {
+            console.error("Données invalides détectées :", donnee);
+            return;
+        }
+
         zone.innerHTML += `
-        <div class="cardProduits btn data-nom=${donnee.nom} data-prix=${donnee.prix}">
-            <img src="assets${donnee.image}" alt="${donnee.nom} " ">
-                <div class="">
+         <div class="cardProduits btn" data-nom="${donnee.nom}" data-price="${donnee.prix}">
+            <img src="assets${donnee.image}" alt="${donnee.nom}">
+            <div>
                     <h4>${donnee.nom}</h4> 
-                    <p>${donnee.prix}€</p> 
+                    <p>${donnee.prix.toFixed(2)}€</p>
                 </div>
         </div>
-         `
-    })
+         `;
+    });
 }
 
 
