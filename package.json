@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "purgecss": "^7.0.2",
     "serve": "^11.2.0"
   },
   "main": "index.html",

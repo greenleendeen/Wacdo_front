@@ -65,7 +65,7 @@ body {
   justify-content: space-around;
 }
 
-.width60 {
+.width70 {
   width: 70%;
 }
 
@@ -104,6 +104,12 @@ p {
   border-bottom-style: solid;
   border-bottom-color: black;
   border-width: 0.5px;
+}
+
+/*page principale*/
+body {
+  width: 100%;
+  height: 100%;
 }
 
 .bandeau {
@@ -152,9 +158,6 @@ p {
   cursor: pointer;
   width: 250px;
   height: 300px;
-
-
-
 }
 
 /* Style the active classe et boutons mouse over */
@@ -162,6 +165,47 @@ p {
 .btn:hover {
   border: 6px solid #ffc836;
   color: #000000 !important;
+}
+/*Boutons*/
+
+.activeOrangeButton {
+  font-family: arial;
+  font-weight: bold;
+  color: #000000 !important;
+  font-size: 14px;
+  text-shadow: 1px 1px 0px #ffc836;
+
+  padding: 11px 21px;
+  border-radius: 8px;
+  border: 1px solid #ffc836;
+  background: #ffc836;
+  background: linear-gradient(to top, #ffc836, #ffc836);
+}
+
+.activeOrangeButton:hover {
+  color: #14396a !important;
+  background: #ffc836;
+  background: linear-gradient(to top, #ffc836, #ffc836);
+}
+
+.greyButton {
+  font-family: arial;
+  font-weight: bold;
+  color: #000000 !important;
+  font-size: 14px;
+  text-shadow: 0px 0px 0px #f1f1f1;
+
+  padding: 11px 21px;
+  border-radius: 8px;
+  border: 1px solid #292929;
+  background: #f1f1f1;
+  background: linear-gradient(to top, #f1f1f1, #f1f1f1);
+}
+
+.greyButton:hover {
+  color: #14396a !important;
+  background: #ffc836;
+  background: linear-gradient(to top, #ffc836, #ffc836);
 }
 
 /*HEADER*/
@@ -190,8 +234,6 @@ p {
   margin: 10px auto;
   padding: 30px;
   background-color: white;
-
-
 }
 
 .swiper-wrapper {
@@ -214,6 +256,7 @@ p {
   border: solid 3px;
   border-color: var(--rulles-strokes);
   height: 170px;
+  width: 150px !important;
   box-sizing: border-box;
   /*background-color: blueviolet;*/
 
@@ -259,47 +302,6 @@ p {
   height: 70px;
 }
 
-/*Boutons*/
-
-.activeOrangeButton {
-  font-family: arial;
-  font-weight: bold;
-  color: #000000 !important;
-  font-size: 14px;
-  text-shadow: 1px 1px 0px #ffc836;
-
-  padding: 11px 21px;
-  border-radius: 8px;
-  border: 1px solid #ffc836;
-  background: #ffc836;
-  background: linear-gradient(to top, #ffc836, #ffc836);
-}
-
-.activeOrangeButton:hover {
-  color: #14396a !important;
-  background: #ffc836;
-  background: linear-gradient(to top, #ffc836, #ffc836);
-}
-
-.greyButton {
-  font-family: arial;
-  font-weight: bold;
-  color: #000000 !important;
-  font-size: 14px;
-  text-shadow: 0px 0px 0px #f1f1f1;
-
-  padding: 11px 21px;
-  border-radius: 8px;
-  border: 1px solid #292929;
-  background: #f1f1f1;
-  background: linear-gradient(to top, #f1f1f1, #f1f1f1);
-}
-
-.greyButton:hover {
-  color: #14396a !important;
-  background: #ffc836;
-  background: linear-gradient(to top, #ffc836, #ffc836);
-}
 
 /* baniere et conteiner */
 .baniere {
@@ -321,11 +323,6 @@ p {
   /*width: 100%;
   object-fit: cover;
 }*/
-
-body {
-  width: 100%;
-  height: 100%;
-}
 
 /*conteiner > div flotante sur les pages 1, 9 et 10*/
 .contener {
@@ -424,7 +421,7 @@ body {
 .fixedBis {
   position: fixed;
   top: 0;
-  right: 0;
+  /*right: 0;*/
 }
 
 #imgBox {
@@ -485,7 +482,7 @@ body {
   align-content: center;
   background-color: #f1f1f1;
   padding: 2%;
-  margin-top: 15%;
+  /*margin-top: 15%;*/
 }
 
 .flex-items:nth-child(1) {
