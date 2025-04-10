@@ -4,7 +4,7 @@
 Ce projet demande de développer la partie Front-end d'une application permettant aux clients des restaurants Wacdo de passer les commandes sur les bornes numériques. Les images, les fichiers Json et la maquette sont dans les éléments fournis en annexe. L’affichage est prévu sur une résolution classique d’écran 1920x1080 mais l'intégration doit être responsive et s’adapter à des résolutions différentes. Les interactions évènementielles sont effectuées via JavaScript.
 
 ##  Aperçu
-![Aperçu du projet]
+![Aperçu du projet] https://greenleendeen.github.io/Wacdo_front/
 
 ## 🛠 Technologies utilisées
 - HTML5
@@ -15,7 +15,7 @@ Ce projet demande de développer la partie Front-end d'une application permettan
 ##  Installation
 1. Clonez le repo :
    ```bash
-   git clone https://github.com/tonpseudo/mon-super-projet.git
+   git clone [https://greenleendeen.github.io/Wacdo_front/]
 
 
 # Fichiers fournis
