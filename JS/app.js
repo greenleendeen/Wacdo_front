@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 var swiper = new Swiper(".mySwiper", {
     rewind: true,
-    slidesPerView: 1,
+    slidesPerView: auto,
     spaceBetween: 15,
     grabCursor: true,
     loop: true,
