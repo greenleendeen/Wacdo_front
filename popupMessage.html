@@ -1,53 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="message" content=" grosse faim ou petite faim? Le menu Maxi Best Of comprend un sandwich, une grande frite et une boisson 50 Cl" />
-    <title>Wacdo message</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
-    <!-- <link rel="icon" type="image/png" href="assets/images/logo.png">-->
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <!-- Bouton pour ouvrir le popup
+<head>
+  <meta charset="UTF-8" />
+  <meta name="message"
+    content=" grosse faim ou petite faim? Le menu Maxi Best Of comprend un sandwich, une grande frite et une boisson 50 Cl" />
+  <title>Wacdo message</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+  <!-- <link rel="icon" type="image/png" href="assets/images/logo.png">-->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Bouton pour ouvrir le popup
     <button id="openPopupBtn">Ouvrir le Popup</button> -->
 
-    <!-- Le Popup -->
-    <div
-      id="popup"
-      class="popup popup-content flex margins gap spaceBetween bgWhite"
-    >
-      <div class="flex spaceAround paddings margins">
-        <!--div contennant le texte-->
-        <div class="flex margins">
-          <h2>Une grosse faim?</h2>
-          <p>
-            Le menu Maxi Best Of comprend un sandwich, une grande frite et une boisson 50 Cl</p>
-        </div>
-        <!--div contennant les 2 images choix-->
-
-        <!--maxi-->
-        <div class="choix margin flex spaceAround">
-          <button id="option1" class="cadreActive btn flex">
-            <img
-              src="assets/images/illustration-maxi-best-of.png"
-              alt="illustration menu maxi"
-            />
-          </button>
-
-          <!--normal-->
-          <button id="option2" class="cadreActive flex btn">
-            <img
-              src="assets/images/illustration-best-of.png"
-              alt="illustration menu normal"
-            />
-          </button>
-        </div>
-        <button class="activeOrangeButton margins">Etape Suivante</button>
+  <!-- Le Popup -->
+  <div id="popup" class="popup popup-content flex margins gap spaceBetween bgWhite">
+    <div class="flex spaceAround paddings margins">
+      <!--div contennant le texte-->
+      <div class="flex margins">
+        <h3>Une grosse faim?</h3>
+        <p>
+          Le menu Maxi Best Of comprend un sandwich, une grande frite et une boisson 50 Cl</p>
       </div>
-    </div>
+      <!--div contennant les 2 images choix-->
 
-    <script src="popUp.js"></script>
-  </body>
+      <!--maxi-->
+      <div class="choix margin flex spaceAround">
+        <button id="option1" class="cadreActive btn flex">
+          <img src="assets/images/illustration-maxi-best-of.png" alt="illustration menu maxi" />
+        </button>
+
+        <!--normal-->
+        <button id="option2" class="cadreActive flex btn">
+          <img src="assets/images/illustration-best-of.png" alt="illustration menu normal" />
+        </button>
+      </div>
+      <button class="activeOrangeButton margins">Etape Suivante</button>
+    </div>
+  </div>
+
+  <script src="popUp.js"></script>
+</body>
+
 </html>

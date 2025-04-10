@@ -7,6 +7,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
 
 }
 
@@ -21,8 +25,8 @@
 
 html,
 body {
-  position: relative;
-  height: 100%;
+  /*position: relative;
+  height: 100%;*/
   font-family: "Source Sans 3", sans-serif;
 
 }
@@ -143,9 +147,11 @@ p {
 
 /* Style des boutons= choix (ccategories, place etc) pour la composition des  menus*/
 .btn {
-  padding: 10px 16px;
-  border: 1px solid #292929;
+  padding: 16px;
+  border: 2px solid #292929;
   cursor: pointer;
+  width: 250px;
+  height: 300px;
 
 
 
@@ -154,7 +160,7 @@ p {
 /* Style the active classe et boutons mouse over */
 .active,
 .btn:hover {
-  border: 4px solid #ffc836;
+  border: 6px solid #ffc836;
   color: #000000 !important;
 }
 
@@ -202,7 +208,7 @@ p {
 
 .swiper-slide {
   /*display: flex;*/
-justify-content: center;
+  justify-content: center;
   align-items: center;
   border-radius: 16px;
   border: solid 3px;
@@ -297,19 +303,24 @@ justify-content: center;
 
 /* baniere et conteiner */
 .baniere {
-  width: 100%;
-  height: 100%;
+  /* width: 50%;
+  height: auto;*/
   display: inline-block;
   /* position: relative;
     z-index: -1;*/
+  background: url(assets/images/mc_landing_banneri.png) no-repeat;
+  background-size: cover;
+  background-position: center;
   opacity: 85%;
+  position: absolute;
+  z-index: -1;
 }
 
-.baniere img {
-  height: 100%;
-  width: 100%;
+/*.baniere img {
+  height: 70%;
+  /*width: 100%;
   object-fit: cover;
-}
+}*/
 
 body {
   width: 100%;
@@ -318,17 +329,23 @@ body {
 
 /*conteiner > div flotante sur les pages 1, 9 et 10*/
 .contener {
-  width: 800px;
+  width: 45%;
   height: auto;
   position: relative;
-  top: -500px;
-  left: 20%;
-  padding: 3%;
+  top: 150px;
+  left: 150px;
+  padding: 10%;
   border-radius: 16px;
-  gap: 64px;
+  gap: 50px;
   z-index: 1;
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
     inset -1px -1px 2px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+}
+
+.contener p {
+  font-weight: 600;
 }
 
 /* cadre =(border) pour le bouton avec choix: orange pour active et gris pour inactive*/
@@ -352,18 +369,16 @@ body {
 }
 
 .cadreActive div {
-  width: 80%;
+  width: 100%;
   padding: 7%;
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
+  display: flex;
+
+
 }
 
 .cadreActive img {
   width: 100%;
+  height: auto;
 }
 
 .bgWhite {
@@ -549,10 +564,10 @@ body {
 }
 
 .popup {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
+  background-color: red;
+  /*padding: 20px;*/
+
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -578,16 +593,18 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   /* Fond sombre */
 }
+
 .popup-content {
-  background-color: white;
-  margin: 15% auto;
+  background-color: var(--light-grey);
+  margin: 10% auto;
   /* Centrer le popup */
-  padding: 20px;
+
   border: 1px solid var(--rulles-strokes);
   width: 700px;
   /* Largeur du popup */
   /*height: 400px;*/
   text-align: center;
+  align-items: center;
 
   padding: 3%;
   border-radius: 16px;
@@ -621,6 +638,37 @@ body {
 .caroussel {
   width: 60%;
   height: 400px;
+}
+
+@media(max-width:991px) {
+
+  .conteiner{
+    width: 45%;
+    height: 300px;
+    top: 75px;
+  }
+.choix {
+  background: red;
+  width:70%;
+  height: 150px;
+}
+  .conteiner p {
+    font-size: 1rem;
+  }
+
+  .cadreActive div {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .btn {
+    width: 35%;
+  }
+
+  .cadreActive h3 {
+    font-size: 1.2rem;
+  }
+
 }
 
 
